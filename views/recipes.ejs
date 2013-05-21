@@ -1,0 +1,10 @@
+<h1><%= title%></h1>
+
+<ul>
+<% recipes.forEach(function(recipe){ %>
+  <li><a href="/recipes/<%= recipe.url %>"><%= recipe.name %></a></li>
+<% }) %>
+</ul>
+
+
+<p><a href="/recipes/suggest"><%= suggestRecipeLink%></a></p>
